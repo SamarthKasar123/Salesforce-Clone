@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #6a4fc5;
+    color: #fff;
+}
+.navbar .logo img {
+    max-height: 50px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #ddd;
+}
+.navbar .actions button {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn-newsletter {
+    background-color: #fff;
+    color: #6a4fc5;
+    border: 1px solid #fff;
+}
+.btn-profile {
+    background-color: #6a4fc5;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Main Section Styles */
+main {
+    display: flex;
+    margin: 2rem;
+    gap: 1rem;
+}
+.featured {
+    flex: 3;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.featured h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.featured img {
+    width: 100%;
+    border-radius: 10px;
+}
+.trending {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.trending h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.trending ul {
+    list-style: none;
+}
+.trending ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6a4fc5;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .featured, .trending {
+        margin: 0 auto;
+    }
+}
